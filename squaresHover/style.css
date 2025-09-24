@@ -1,0 +1,66 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: azure;
+}
+div {
+  visibility: visible;
+}
+#main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+.shapes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 200px;
+  height: 200px;
+
+  border: 2px;
+  border-style: solid;
+}
+#square {
+  background-color: rgb(61, 41, 191);
+}
+#square:hover {
+  background-color: rgb(225, 89, 232);
+}
+#diamond {
+  background-color: rgb(161, 57, 189);
+  rotate: 45deg;
+  margin-top: 50px;
+  width: 180px;
+  height: 180px;
+  translate: 30px;
+}
+h1 {
+  font-weight: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#circle {
+  background-color: rgb(229, 42, 95);
+  border-radius: 50%;
+}
+#circle:hover {
+  background-color: rgb(61, 227, 177);
+}
+#diamond h1 {
+  rotate: -45deg;
+}
+#diamond:hover {
+  background-color: deepskyblue;
+}
