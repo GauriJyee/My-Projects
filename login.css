@@ -1,0 +1,133 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  padding-top: 20px;
+  background-color: #ffdbbb;
+  font-family: "Poopins", sans-serif;
+}
+input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5a58a;
+  outline: none;
+  transition: 0.3s;
+}
+input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5a58a;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #a9744f;
+  box-shadow: 0 0 8px rgba(200, 150, 100, 0.5);
+}
+input:focus {
+  border-color: #a9744f;
+  box-shadow: 0 0 8px rgba(200, 150, 100, 0.5);
+}
+.welcomeMsg {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #6d4d2e;
+  text-align: center;
+  text-shadow:
+    0 0 5px #ffdfc4,
+    0 0 10px #daa37a,
+    0 0 15px #cfb4a9;
+  transition: 0.3s ease;
+}
+.imgBox {
+  width: 400px;
+  background-image: url("GirlImg.png");
+  background-size: cover;
+  transition: 0.3s;
+}
+.imgBox {
+  transition: background-image 0.3s ease;
+}
+.imgBox:hover {
+  content: url("GirlImgHover.png");
+}
+.imgBox2 {
+  width: 400px;
+  /* height: 500px; */
+
+  background-size: cover;
+  transition: 0.3s;
+}
+.imgBox2 {
+  transition: background-image 0.3s ease;
+}
+.imgBox2:hover {
+  content: url("BoyImgHover.png");
+}
+/* login box */
+.login {
+  width: 320px;
+}
+.signUp {
+  width: 320px;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+img {
+  transition: 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.login {
+  width: 300px;
+  margin: auto;
+  border: #6d4d2e 2px solid;
+  background-color: #fff5ec;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* center in screen */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.signUp {
+  width: 350px;
+  margin: auto;
+  border: #6d4d2e 2px solid;
+  background-color: #fff5ec;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* center in screen */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+button {
+  background: linear-gradient(135deg, #d9a87c, #c58f63);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 180, 120, 0.5);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(230, 172, 125, 0.5);
+}

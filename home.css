@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: linear-gradient(135deg, #ffdbbb, #f6e6d8);
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffdbbb, #f6e6d8);
+  overflow-x: hidden;
+  font-family: "Poppins";
+}
+.page {
+  height: 100%;
+  width: 100%;
+}
+.popup {
+  display: none;
+  z-index: 1000;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup-box {
+  background: #ffdbbb;
+  padding: 15px;
+  border-radius: 14px;
+  width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #a9744f;
+  animation: fadeIn 0.2s ease;
+}
+
+.popup-box::before {
+  display: none;
+}
+.popup-box::before {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) rotate(45deg);
+}
+.popup {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+.popup.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topBar {
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(109, 77, 46, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  box-shadow: 0 8px 24px rgba(109, 77, 46, 0.08);
+  position: relative;
+  top: 0;
+}
+.icon1 h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: #6d4d2e;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+.popupBtn {
+  border: none;
+  background: transparent;
+  color: #6d4d2e;
+  font-size: 22px;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(109, 77, 46, 0.12);
+}
+.popupBtn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: #a9744f;
+  color: white;
+  box-shadow: 0 8px 18px rgba(109, 77, 46, 0.25);
+}
+#name {
+  margin: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #6d4d2e;
+}
+.modelImgBox {
+  position: relative;
+  display: flex;
+  margin: auto;
+  height: 500px;
+  width: 90%;
+}
+.mallImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+  border: #a9744f 5px solid;
+  border-radius: 20px;
+}
+.outfitSuggestion {
+  font-family: "PlayFair Display";
+  color: #6d4d2e;
+  font-weight: 1000;
+}
+.modelImg {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin-left: 100px;
+  object-fit: cover;
+  display: block;
+  z-index: 2;
+}
+.content {
+  object-fit: cover;
+  height: 150px;
+  width: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  border: #6d4d2e 2px solid;
+  background-color: #fff5ec;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* center in screen */
+  box-shadow: 0 10px 25px rgba(253, 246, 246, 0.21);
+  font-family: "poppins";
+  text-align: center;
+  color: #a9744f;
+  font-size: medium;
+}
+.contentText {
+  margin-bottom: 10px;
+}
+.modelImg:hover {
+  content: url(kurtiImg.png);
+}
+.randomizer {
+  font-family: "PlayFair Display";
+}
+.page2{
+  margin-top: 50px;
+}
+.clothes {
+  display: flex;
+  margin: auto;
+  font-size: large;
+}
+.clothesBtn {
+  background: linear-gradient(135deg, #d9a87c, #c58f63);
+  border: none;
+  font-size:large;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(255, 180, 120, 0.5);
+  transition: 0.3s;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(230, 172, 125, 0.5);
+}
+.suggestions{
+  display: flex;
+  margin-top: 50px;
+}
+.suggestionTypes {
+  height: 150px;
+  width: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  border: #6d4d2e 2px solid;
+  background-color: #fff5ec;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(253, 246, 246, 0.21);
+  font-family: "PlayFair Display";
+  text-align: center;
+  color: #a9744f;
+  font-size: medium;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closeté☘︎ - Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <div class="topBar">
+        <div class="icon1" style="display: flex;">
+            <div class="icon1">
+             <h2>Closeté☘︎</h2>
+            </div>
+        </div>
+        <div class="icon2">
+            <button data-type="more" title="More Options"  class="popupBtn"><i class="ri-more-fill"></i></button>
+            
+        </div>
+    </div><div id="popup" class="popup">
+<div class="popup-box" id="popupBox">
+    </div>
+      </div>
+            <div class="page">
+            <div class="page1">
+              <div><p id="name">Welcome</p></div>
+              <div class="modelImgBox">
+                <img class="mallImg" src="mallSceneImg.png" alt="mallSceneImg" >
+                <img class="modelImg" src="sareeImg.png" alt="">
+                <div class="content">
+                  <div class="contentText"> 
+                    <p>Today's Outfit Suggestion</p>
+                    <p>---------------</p>
+                    <p class="outfitSuggestion"></p>
+                  </div>
+                  <button id="randomizer" class="clothesBtn"> Get Outfit ►</button>
+                </div>   
+              </div>
+            </div>
+              <div class="page2">
+                  <div class="clothes">
+                    <button class="clothesBtn">Tops</button>
+                    <button class="clothesBtn">Bottoms</button>
+                    <button class="clothesBtn">Saree</button>
+                    <button class="clothesBtn">Jacket</button>
+                    <button class="clothesBtn">Other</button>
+                  </div>
+                  <div class="suggestions">
+                    <div id="weather" class="suggestionTypes">Weather</div>
+                    <div id="ocassion" class="suggestionTypes">Ocassion</div>
+                    <div class="suggestionTypes">Mood</div>
+                    <div class="suggestionTypes">More</div>
+                  </div>
+                </div>
+              
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="home.js"></script>
+  </body>
+</html>
